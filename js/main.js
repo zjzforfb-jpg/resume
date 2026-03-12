@@ -329,46 +329,6 @@
     });
 
     // ========================================
-    // B站视频嵌入检测
-    // ========================================
-    function checkBilibiliEmbed() {
-        const embeds = document.querySelectorAll('.bilibili-embed iframe');
-        
-        embeds.forEach(iframe => {
-            // 检测iframe是否加载成功
-            iframe.addEventListener('load', function() {
-                // 尝试访问iframe内容，如果失败则显示备用链接
-                try {
-                    const iframeDoc = this.contentDocument || this.contentWindow.document;
-                    // 如果能访问，说明加载成功
-                } catch (e) {
-                    // 跨域错误，显示备用链接
-                    showVideoFallback(this);
-                }
-            });
-            
-            // 3秒后如果还没加载成功，显示备用链接
-            setTimeout(() => {
-                if (!iframe.dataset.loaded) {
-                    showVideoFallback(iframe);
-                }
-            }, 3000);
-        });
-    }
-    
-    function showVideoFallback(iframe) {
-        const wrapper = iframe.closest('.bilibili-embed');
-        const fallback = wrapper.querySelector('.video-fallback');
-        if (fallback) {
-            fallback.style.display = 'flex';
-            iframe.style.opacity = '0';
-        }
-    }
-    
-    // 页面加载完成后检测
-    checkBilibiliEmbed();
-
-    // ========================================
     // 视频播放控制
     // ========================================
     window.playVideo = function(button) {
