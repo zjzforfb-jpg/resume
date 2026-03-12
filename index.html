@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>张建宗 - AI技术工程师 | 个人作品集</title>
+    <meta name="description" content="张建宗 - 专注于AI漫剧生成、AI影视制作的AI技术工程师，精通React、Electron、Python等技术栈">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-text">JZ</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">首页</a></li>
+                <li><a href="#skills" class="nav-link">技能</a></li>
+                <li><a href="#projects" class="nav-link">作品</a></li>
+                <li><a href="#experience" class="nav-link">经历</a></li>
+                <li><a href="#contact" class="nav-link">联系</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="菜单">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页/英雄区 -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-robot"></i>
+                    <span>AI技术工程师</span>
+                </div>
+                <h1 class="hero-title">
+                    你好，我是<span class="highlight">张建宗</span>
+                </h1>
+                <p class="hero-subtitle">
+                    专注于AI漫剧生成、AI影视制作的技术探索者<br>
+                    用代码和创意，让AI赋能内容创作
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        查看作品
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        联系我
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">年工作经验</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">AI工具掌握</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">独立项目</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image">
+                        <div class="avatar-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="floating-card card-1">
+                        <i class="fas fa-code"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-brain"></i>
+                        <span>AI</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-video"></i>
+                        <span>Sora</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>向下滚动</span>
+        </div>
+    </section>
+
+    <!-- 技能专长 -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Skills</span>
+                <h2 class="section-title">技能专长</h2>
+                <p class="section-desc">全栈开发能力 + AI工具应用，打造完整的内容创作管线</p>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- AI工具 -->
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <div class="skill-icon ai">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI创作工具</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Sora 2.0</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Seedance 2.0</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Nano Banana 2</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Claude Code / OpenClaw</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 前端开发 -->
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <div class="skill-icon frontend">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>前端开发</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Electron</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">HTML5 / CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 后端与工具 -->
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <div class="skill-icon backend">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>后端与工具</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Photoshop</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">剪映</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git / GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 技术栈标签 -->
+            <div class="tech-stack">
+                <h3>技术栈</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Electron</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">AI API</span>
+                    <span class="tech-tag">RESTful API</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Sora</span>
+                    <span class="tech-tag">Seedance</span>
+                    <span class="tech-tag">Claude</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目作品 -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Projects</span>
+                <h2 class="section-title">项目作品</h2>
+                <p class="section-desc">独立开发的AI工具，构建完整的内容创作管线</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- 项目1：AI漫剧生成工具 -->
+                <div class="project-card featured">
+                    <div class="project-video-wrapper bilibili-embed">
+                        <!-- B站嵌入代码 - 漫剧生产管线 -->
+                        <iframe 
+                            src="https://player.bilibili.com/player.html?bvid=BV1hHcBz1EiJ&page=1&high_quality=1&danmaku=0&autoplay=0" 
+                            scrolling="no" 
+                            border="0" 
+                            frameborder="no" 
+                            framespacing="0" 
+                            allowfullscreen="true"
+                            allow="autoplay; fullscreen"
+                            loading="lazy">
+                        </iframe>
+                        <!-- 本地预览时显示的替代链接 -->
+                        <a href="https://www.bilibili.com/video/BV1hHcBz1EiJ" target="_blank" class="video-fallback" style="display:none;">
+                            <i class="fas fa-play-circle"></i>
+                            <span>点击观看视频</span>
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">AI API</span>
+                            <span class="tag">Pipeline</span>
+                        </div>
+                        <h3 class="project-title">AI漫剧生成管线工具</h3>
+                        <p class="project-desc">
+                            基于React开发的AI漫剧生成工具，整合多种AI模型，实现从剧本到成片的自动化流程。
+                            支持分镜生成、角色一致性控制、自动配音等功能。
+                        </p>
+                        <div class="project-features">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>自动化漫剧生成管线</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>角色一致性控制</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>批量处理能力</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-small btn-primary" onclick="playVideo(this)">
+                                <i class="fas fa-play"></i> 播放演示
+                            </button>
+                            <a href="#" class="btn btn-small btn-ghost">
+                                <i class="fab fa-github"></i>
+                                源码
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目2：即梦脚本创作工具 -->
+                <div class="project-card featured">
+                    <div class="project-video-wrapper bilibili-embed">
+                        <!-- B站嵌入代码 - 即梦脚本app介绍 -->
+                        <iframe 
+                            src="https://player.bilibili.com/player.html?bvid=BV18WcBz5EPn&page=1&high_quality=1&danmaku=0&autoplay=0" 
+                            scrolling="no" 
+                            border="0" 
+                            frameborder="no" 
+                            framespacing="0" 
+                            allowfullscreen="true"
+                            allow="autoplay; fullscreen"
+                            loading="lazy">
+                        </iframe>
+                        <!-- 本地预览时显示的替代链接 -->
+                        <a href="https://www.bilibili.com/video/BV18WcBz5EPn" target="_blank" class="video-fallback" style="display:none;">
+                            <i class="fas fa-play-circle"></i>
+                            <span>点击观看视频</span>
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Electron</span>
+                            <span class="tag">Desktop App</span>
+                        </div>
+                        <h3 class="project-title">即梦脚本创作工具</h3>
+                        <p class="project-desc">
+                            使用React + Electron开发的桌面端AI视频脚本创作工具，集成即梦AI API，
+                            提供可视化的脚本生成、视频分镜预览和项目管理功能。
+                        </p>
+                        <div class="project-features">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>桌面端跨平台应用</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>AI脚本智能生成</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>视频分镜预览</span>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-small btn-primary" onclick="playVideo(this)">
+                                <i class="fas fa-play"></i> 播放演示
+                            </button>
+                            <a href="#" class="btn btn-small btn-ghost">
+                                <i class="fab fa-github"></i>
+                                源码
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目3：AI影视制作工作流 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Sora</span>
+                            <span class="tag">Workflow</span>
+                        </div>
+                        <h3 class="project-title">AI影视制作工作流</h3>
+                        <p class="project-desc">
+                            基于 OpenAI Codex 智能体框架，构建完整的影视解说视频制作工作流。
+                            集成语音合成、画面剪辑、字幕生成等模块，实现从文案到成片的全流程自动化，
+                            大幅提升影视解说内容的生产效率。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 项目4：PS自动化脚本 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Photoshop</span>
+                            <span class="tag">Script</span>
+                        </div>
+                        <h3 class="project-title">PS批量处理脚本</h3>
+                        <p class="project-desc">
+                            开发Photoshop自动化脚本，实现图片批量处理、格式转换、
+                            尺寸调整等功能，提升设计工作效率。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 工作经历 -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Experience</span>
+                <h2 class="section-title">工作经历</h2>
+                <p class="section-desc">从传统行业到AI技术的转型之路</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021.10 - 2025.10</div>
+                        <h3 class="timeline-title">材料工程师</h3>
+                        <div class="timeline-company">中建八局第一建设有限公司中原公司</div>
+                        <p class="timeline-desc">
+                            负责项目物资管理、信息化系统操作，期间自学前端开发和AI工具，
+                            完成从传统工程到技术领域的转型。
+                        </p>
+                        <div class="timeline-tags">
+                            <span>信息化系统</span>
+                            <span>项目管理</span>
+                            <span>自学转型</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2018.07 - 2021.09</div>
+                        <h3 class="timeline-title">材料员</h3>
+                        <div class="timeline-company">河南省第一建筑工程集团有限责任公司</div>
+                        <p class="timeline-desc">
+                            负责材料进场验收、台账管理、供应商对账等工作，
+                            培养了严谨细致的工作态度和项目管理能力。
+                        </p>
+                        <div class="timeline-tags">
+                            <span>材料管理</span>
+                            <span>数据统计</span>
+                            <span>供应商协调</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2014.07 - 2018.07</div>
+                        <h3 class="timeline-title">物理学 本科</h3>
+                        <div class="timeline-company">廊坊师范学院</div>
+                        <p class="timeline-desc">
+                            系统学习物理学专业知识，培养了逻辑思维能力和问题解决能力，
+                            为后续技术学习打下坚实基础。
+                        </p>
+                        <div class="timeline-tags">
+                            <span>物理学</span>
+                            <span>逻辑思维</span>
+                            <span>学习能力</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">联系我</h2>
+                <p class="section-desc">有项目合作或工作机会？欢迎随时联系</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>电话</h3>
+                            <p>17530960221</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>邮箱</h3>
+                            <p>2535893566@qq.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>所在地</h3>
+                            <p>河北省石家庄市</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h3>社交媒体</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="微信">
+                                <i class="fab fa-weixin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/mpqydwnj" method="POST">
+                        <div class="form-group">
+                            <label for="name">您的姓名</label>
+                            <input type="text" id="name" name="name" placeholder="请输入您的姓名" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">邮箱地址</label>
+                            <input type="email" id="email" name="email" placeholder="请输入您的邮箱" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">主题</label>
+                            <input type="text" id="subject" name="subject" placeholder="请输入主题" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">留言内容</label>
+                            <textarea id="message" name="message" rows="5" placeholder="请输入您的留言..." required></textarea>
+                        </div>
+                        <!-- 防垃圾邮件隐藏字段 -->
+                        <input type="text" name="_gotcha" style="display:none">
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            发送消息
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">JZ</span>
+                    <p>用AI创造价值，用代码实现梦想</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">首页</a>
+                    <a href="#skills">技能</a>
+                    <a href="#projects">作品</a>
+                    <a href="#contact">联系</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 张建宗. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> and AI</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
