@@ -321,19 +321,44 @@ img {
 .hero-subtitle {
     font-size: 1.25rem;
     color: var(--text-secondary);
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
     line-height: 1.8;
+}
+
+.hero-proof {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.hero-proof span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.hero-proof i {
+    color: #10b981;
 }
 
 .hero-actions {
     display: flex;
     gap: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .hero-stats {
     display: flex;
     gap: 3rem;
+}
+
+.hero-note {
+    margin-top: 1.25rem;
+    font-size: 0.9375rem;
+    color: var(--text-tertiary);
 }
 
 .stat-item {
@@ -518,6 +543,161 @@ section {
     color: var(--text-secondary);
     max-width: 600px;
     margin: 0 auto;
+}
+
+/* ========================================
+   服务区块
+   ======================================== */
+.services {
+    background-color: var(--bg-secondary);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.service-card {
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-xl);
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.service-card.featured {
+    border-color: rgba(59, 130, 246, 0.35);
+    box-shadow: 0 12px 30px rgba(59, 130, 246, 0.12);
+}
+
+.service-head {
+    margin-bottom: 1rem;
+}
+
+.service-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    border-radius: 999px;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    color: var(--accent-primary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.service-badge.hot {
+    background: rgba(59, 130, 246, 0.12);
+    border-color: rgba(59, 130, 246, 0.2);
+}
+
+.service-head h3 {
+    font-size: 1.35rem;
+    margin-bottom: 0.5rem;
+}
+
+.service-price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.service-desc {
+    color: var(--text-secondary);
+    margin-bottom: 1.25rem;
+}
+
+.service-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.service-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.625rem;
+    color: var(--text-secondary);
+    font-size: 0.9375rem;
+}
+
+.service-item i {
+    color: #10b981;
+    margin-top: 0.15rem;
+}
+
+.service-process {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 1.5rem;
+}
+
+.process-card {
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-xl);
+    padding: 1.5rem;
+}
+
+.process-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.process-steps {
+    display: grid;
+    gap: 0.875rem;
+}
+
+.process-step {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+}
+
+.process-step span {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: var(--accent-gradient);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.process-step p {
+    color: var(--text-secondary);
+}
+
+.process-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.process-tags span {
+    padding: 0.5rem 0.875rem;
+    border-radius: 999px;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    font-size: 0.875rem;
 }
 
 /* ========================================
@@ -933,6 +1113,38 @@ section {
     gap: 1.5rem;
 }
 
+.contact-intro,
+.contact-cta-card {
+    padding: 1.5rem;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-xl);
+}
+
+.contact-intro h3,
+.contact-cta-card h3,
+.contact-form-head h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.contact-points {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.contact-points div {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.625rem;
+    color: var(--text-secondary);
+}
+
+.contact-points i {
+    color: #10b981;
+    margin-top: 0.15rem;
+}
+
 .contact-card {
     display: flex;
     align-items: center;
@@ -972,39 +1184,14 @@ section {
     font-weight: 500;
 }
 
-.contact-social {
-    margin-top: 1rem;
+.contact-details a {
+    color: inherit;
 }
 
-.contact-social h3 {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-.social-links {
-    display: flex;
-    gap: 1rem;
-}
-
-.social-link {
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: var(--radius-lg);
-    background-color: var(--bg-secondary);
-    border: 1px solid var(--border-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.contact-cta-card p,
+.contact-form-head p {
     color: var(--text-secondary);
-    font-size: 1.25rem;
-    transition: all var(--transition-fast);
-}
-
-.social-link:hover {
-    background-color: var(--accent-primary);
-    border-color: var(--accent-primary);
-    color: white;
+    margin-bottom: 1rem;
 }
 
 /* 联系表单 */
@@ -1059,6 +1246,146 @@ section {
 .form-group textarea {
     resize: vertical;
     min-height: 120px;
+}
+
+/* ========================================
+   微信二维码
+   ======================================== */
+.contact-wechat {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    text-align: center;
+}
+
+.contact-wechat h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.wechat-qr-wrapper {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform var(--transition-fast);
+}
+
+.wechat-qr-wrapper:hover {
+    transform: scale(1.05);
+}
+
+.wechat-qr-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wechat-qr-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+    transition: opacity var(--transition-fast);
+}
+
+.wechat-qr-wrapper:hover .wechat-qr-overlay {
+    opacity: 1;
+}
+
+.wechat-qr-overlay i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.wechat-qr-overlay span {
+    font-size: 0.875rem;
+}
+
+.wechat-hint {
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+/* 微信二维码弹窗 */
+.wechat-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.wechat-modal.active {
+    display: flex;
+}
+
+.wechat-modal-content {
+    position: relative;
+    background-color: var(--bg-primary);
+    border-radius: var(--radius-xl);
+    padding: 2rem;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    box-shadow: var(--shadow-xl);
+}
+
+.wechat-modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    transition: all var(--transition-fast);
+}
+
+.wechat-modal-close:hover {
+    background-color: var(--accent-primary);
+    color: white;
+}
+
+.wechat-modal-img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: var(--radius-lg);
+    margin-bottom: 1rem;
+}
+
+.wechat-modal-text {
+    font-size: 1rem;
+    color: var(--text-secondary);
 }
 
 /* ========================================
@@ -1148,6 +1475,10 @@ section {
         justify-content: center;
     }
 
+    .hero-proof span {
+        justify-content: center;
+    }
+
     .hero-image-wrapper {
         width: 300px;
         height: 300px;
@@ -1176,6 +1507,8 @@ section {
         grid-template-columns: 1fr;
     }
 
+    .services-grid,
+    .service-process,
     .contact-grid {
         grid-template-columns: 1fr;
     }
@@ -1238,12 +1571,17 @@ section {
     }
 
     .hero-stats {
-        flex-direction: column;
         gap: 1.5rem;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .skills-grid {
         grid-template-columns: 1fr;
+    }
+
+    .services-grid {
+        gap: 1rem;
     }
 
     .section-title {

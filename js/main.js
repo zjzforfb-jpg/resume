@@ -474,6 +474,32 @@
         });
     });
 
+    // ========================================
+    // 微信二维码弹窗控制
+    // ========================================
+    window.openWechatModal = function() {
+        const modal = document.getElementById('wechatModal');
+        if (modal) {
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+    };
+
+    window.closeWechatModal = function() {
+        const modal = document.getElementById('wechatModal');
+        if (modal) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    };
+
+    // ESC键关闭弹窗
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeWechatModal();
+        }
+    });
+
     console.log('🚀 张建宗简历网站已加载完成！');
-    console.log('💡 功能：主题切换、移动端适配、平滑滚动、表单提交');
+    console.log('💡 功能：主题切换、移动端适配、平滑滚动、表单提交、微信二维码');
 })();
