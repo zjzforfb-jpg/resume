@@ -248,42 +248,6 @@
     }
 
     // ========================================
-    // 打字机效果（可选）
-    // ========================================
-    function typeWriter(element, text, speed = 100) {
-        let i = 0;
-        element.textContent = '';
-        
-        function type() {
-            if (i < text.length) {
-                element.textContent += text.charAt(i);
-                i++;
-                setTimeout(type, speed);
-            }
-        }
-        
-        type();
-    }
-
-    // 为副标题添加打字机效果
-    const heroSubtitle = document.querySelector('.hero-subtitle');
-    if (heroSubtitle) {
-        const originalText = heroSubtitle.textContent;
-        
-        // 使用 Intersection Observer 触发打字效果
-        const subtitleObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    typeWriter(heroSubtitle, originalText, 50);
-                    subtitleObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.5 });
-
-        subtitleObserver.observe(heroSubtitle);
-    }
-
-    // ========================================
     // 技能条动画触发
     // ========================================
     // 先保存所有进度条的原始宽度
