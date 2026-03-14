@@ -529,8 +529,8 @@ section {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
     margin-bottom: 4rem;
 }
 
@@ -577,6 +577,11 @@ section {
 .skill-icon.backend {
     background-color: rgba(16, 185, 129, 0.1);
     color: #10b981;
+}
+
+.skill-icon.agent {
+    background-color: rgba(245, 158, 11, 0.1);
+    color: #f59e0b;
 }
 
 .skill-header h3 {
@@ -648,6 +653,179 @@ section {
     background-color: var(--accent-primary);
     color: white;
     border-color: var(--accent-primary);
+}
+
+.tech-tag.highlight {
+    background: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%);
+    color: white;
+    border-color: transparent;
+    font-weight: 600;
+}
+
+/* ========================================
+   OpenClaw 重点展示
+   ======================================== */
+.openclaw-showcase {
+    margin-top: 4rem;
+    padding: 3rem;
+    background: linear-gradient(135deg, rgba(255, 107, 107, 0.05) 0%, rgba(254, 202, 87, 0.05) 100%);
+    border: 2px solid rgba(255, 107, 107, 0.2);
+    border-radius: var(--radius-2xl);
+    position: relative;
+    overflow: hidden;
+}
+
+.openclaw-showcase::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(255, 107, 107, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.openclaw-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.openclaw-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+}
+
+.openclaw-title h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.openclaw-title p {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+}
+
+.openclaw-features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.openclaw-feature {
+    padding: 1.5rem;
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.openclaw-feature:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: rgba(255, 107, 107, 0.3);
+}
+
+.openclaw-feature .feature-icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.openclaw-feature h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.openclaw-feature p {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.openclaw-stats {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background-color: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    position: relative;
+    z-index: 1;
+}
+
+.openclaw-stats .stat {
+    text-align: center;
+}
+
+.openclaw-stats .stat-value {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.25rem;
+}
+
+.openclaw-stats .stat-label {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.openclaw-cta {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.openclaw-cta p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.openclaw-cta .btn {
+    background: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%);
+    border: none;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+}
+
+.openclaw-cta .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.5);
 }
 
 /* ========================================
@@ -1365,6 +1543,20 @@ section {
 
     .skills-grid {
         grid-template-columns: 1fr;
+    }
+
+    .openclaw-features {
+        grid-template-columns: 1fr;
+    }
+
+    .openclaw-stats {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .openclaw-header {
+        flex-direction: column;
+        text-align: center;
     }
 
     .section-title {
