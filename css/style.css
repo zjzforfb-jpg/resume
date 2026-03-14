@@ -863,7 +863,27 @@ section {
     overflow: hidden;
 }
 
-/* B站嵌入样式 */
+/* COS视频样式 */
+.cos-video {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    background: #000;
+    overflow: hidden;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.project-video-player {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-video-player::-webkit-media-controls {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* B站嵌入样式（保留备用） */
 .bilibili-embed {
     position: relative;
     width: 100%;
